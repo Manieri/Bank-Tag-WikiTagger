@@ -1,13 +1,13 @@
-package com.example;
+package com.wikitagger;
 
 import net.runelite.client.RuneLite;
 import net.runelite.client.externalplugins.ExternalPluginManager;
 
-public class ExamplePluginTest
+public class WikiTaggerPluginTest
 {
 	public static void main(String[] args) throws Exception
 	{
-		ExternalPluginManager.loadBuiltin(ExamplePlugin.class);
+		ExternalPluginManager.loadBuiltin(WikiTaggerPlugin.class);
 		RuneLite.main(args);
 	}
 }
