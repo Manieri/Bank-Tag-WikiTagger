@@ -4,16 +4,16 @@ import net.runelite.client.config.Config;
 import net.runelite.client.config.ConfigGroup;
 import net.runelite.client.config.ConfigItem;
 
-@ConfigGroup("example")
+@ConfigGroup("wikitagger")
 public interface WikiTaggerConfig extends Config
 {
 	@ConfigItem(
-		keyName = "greeting",
-		name = "Welcome Greeting",
-		description = "The message to show to the user when they login"
+			keyName = "dropsChatCommand",
+			name = "Drops chat command",
+			description = "The chat command to make a tab from the drops of a monster"
 	)
-	default String greeting()
+	default String dropsChatCommand()
 	{
-		return "Hello";
+		return "drops";
 	}
 }
